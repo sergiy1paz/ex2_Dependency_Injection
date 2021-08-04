@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex2_Dependency_Injection", "ex2_Dependency_Injection\ex2_Dependency_Injection.csproj", "{A1AA9253-A59B-4649-98C6-83FA1A0E0C4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{24B27B16-14E6-4D32-82C4-CDDB1A01B1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3ECF66A4-DA14-44C2-A47B-7465B12B5795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A1AA9253-A59B-4649-98C6-83FA1A0E0C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1AA9253-A59B-4649-98C6-83FA1A0E0C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1AA9253-A59B-4649-98C6-83FA1A0E0C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B27B16-14E6-4D32-82C4-CDDB1A01B1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B27B16-14E6-4D32-82C4-CDDB1A01B1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B27B16-14E6-4D32-82C4-CDDB1A01B1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B27B16-14E6-4D32-82C4-CDDB1A01B1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECF66A4-DA14-44C2-A47B-7465B12B5795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECF66A4-DA14-44C2-A47B-7465B12B5795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECF66A4-DA14-44C2-A47B-7465B12B5795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECF66A4-DA14-44C2-A47B-7465B12B5795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
