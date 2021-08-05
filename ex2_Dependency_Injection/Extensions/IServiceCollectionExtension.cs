@@ -12,9 +12,9 @@ namespace ex2_Dependency_Injection.Extensions
     {
         public static IServiceCollection AddArticleServices(this IServiceCollection services)
         {
-            services.AddSingleton<IArticleInfoService, ArticleInfoService>();
+            services.AddScoped<IArticleInfoService, ArticleInfoService>();
             services.AddTransient<IArticleContentService, ArticleContentService>();
-            services.AddSingleton<ICheckArticleService, CheckArticleService>();
+            services.AddScoped<ICheckArticleService, CheckArticleService>();
             services.AddScoped<IPublishArticleService, PublishArticleService>();
             services.AddScoped<IArticleProcessService, ArticleProcessService>();
 
