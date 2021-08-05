@@ -9,9 +9,28 @@ namespace Services
 {
     public class PublishArticleService : IPublishArticleService
     {
-        public bool Publish()
+        private readonly IArticleInfoService _articleInfo;
+
+        public PublishArticleService(IArticleInfoService articleInfo)
         {
-            throw new NotImplementedException();
+            _articleInfo = articleInfo;
+        }
+
+        public string Publish()
+        {
+            string text = null;            
+            try
+            {
+                // some logic ... 
+                text = _articleInfo.Content;
+                Console.WriteLine("Опубліковано");
+                
+            } catch (Exception)
+            {
+                Console.WriteLine("Помилка публікації");
+                text = "Error!";
+            }
+            return text;
         }
     }
 }

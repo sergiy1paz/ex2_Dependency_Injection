@@ -9,9 +9,16 @@ namespace Services
 {
     public class CheckArticleService : ICheckArticleService
     {
+        private readonly IArticleInfoService _articleInfo;
+
+        public CheckArticleService(IArticleInfoService articleInfo)
+        {
+            _articleInfo = articleInfo;
+        }
+
         public bool Check()
         {
-            throw new NotImplementedException();
+            return _articleInfo.Content is not null;
         }
     }
 }

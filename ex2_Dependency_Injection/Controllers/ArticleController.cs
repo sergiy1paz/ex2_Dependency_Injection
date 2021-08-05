@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Interfaces;
 
 namespace ex2_Dependency_Injection.Controllers
 {
@@ -11,16 +12,16 @@ namespace ex2_Dependency_Injection.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
-        public ArticleController()
+        private readonly IArticleProcessService _service;
+        public ArticleController(IArticleProcessService service)
         {
-
+            _service = service;
         }
 
+        [HttpGet]
         public IActionResult PublishArticle()
         {
-
-
-            return Ok();
+            return Ok(_service.Process());
         }
     }
 }

@@ -9,10 +9,19 @@ namespace Services
 {
     public class ArticleContentService : IArticleContentService
     {
+        private readonly IArticleInfoService _articleInfo;
 
-        public void SetContent()
+        public ArticleContentService(IArticleInfoService articleInfo)
         {
-            
+            _articleInfo = articleInfo;
+        }
+
+        public void SetContent(string content)
+        {
+            if (_articleInfo is not null)
+            {
+                _articleInfo.Content = content;
+            }
         }
     }
 }

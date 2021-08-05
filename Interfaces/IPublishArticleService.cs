@@ -8,6 +8,6 @@ namespace Interfaces
 {
     public interface IPublishArticleService
     {
-        bool Publish();
+        string Publish();
     }
 }

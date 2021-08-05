@@ -8,6 +8,6 @@ namespace Interfaces
 {
     public interface IArticleContentService
     {
-        void SetContent();
+        void SetContent(string content);
     }
 }
