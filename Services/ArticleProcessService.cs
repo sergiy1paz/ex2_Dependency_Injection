@@ -13,8 +13,8 @@ namespace Services
         private readonly ICheckArticleService _checkArticleService;
         private readonly IPublishArticleService _publishArticleService;
 
-        public ArticleProcessService(IArticleContentService contentService, 
-            ICheckArticleService checkArticleService, 
+        public ArticleProcessService(IArticleContentService contentService,
+            ICheckArticleService checkArticleService,
             IPublishArticleService publishArticleService)
         {
             _contentService = contentService;
@@ -26,11 +26,12 @@ namespace Services
         {
             _contentService.SetContent("Test content was created by Sergiy Pazyuk");
 
-            string result;  
+            string result;
             if (_checkArticleService.Check())
             {
                 result = _publishArticleService.Publish();
-            } else
+            }
+            else
             {
                 result = "Article has not text";
             }
