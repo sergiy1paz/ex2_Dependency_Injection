@@ -23,11 +23,11 @@ namespace Services
             {
                 // some logic ... 
                 text = _articleInfo.Content;
-                Console.WriteLine("Опубліковано");
+                Console.WriteLine("Article was published");
                 
             } catch (Exception)
             {
-                Console.WriteLine("Помилка публікації");
+                Console.WriteLine("Error of publishing!");
                 text = "Error!";
             }
             return text;
